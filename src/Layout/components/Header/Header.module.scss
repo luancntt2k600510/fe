@@ -1,0 +1,36 @@
+.wrapper {
+    background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity));
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1500;
+    text-align: center !important;
+    margin-right: 0;
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    // Container
+    max-width: 1140px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+
+}
+
+.logonavbar {
+    display: flex;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}

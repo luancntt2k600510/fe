@@ -1,0 +1,23 @@
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 1.5rem;
+    list-style: none;
+    justify-content: center;
+    align-content: center;
+    // background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
+}
+
+.nav {
+    text-decoration: none !important;
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity))!important;
+    
+
+    &:hover {
+        color: var(--bs-white-rgb);
+        cursor: pointer;
+        background-color: var(--bs-red);
+    }
+}
