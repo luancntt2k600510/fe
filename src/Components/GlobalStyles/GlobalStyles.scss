@@ -4,7 +4,9 @@
 
     // Background btn
     --bs-warning: #ffc107;
-    --bs-red: tomato;
+    --bs-red: red;
+    --white: #fff;
+    --black: #000;
 
     // Border
     --bs-btn-border-radius: 0.375rem;
@@ -28,6 +30,8 @@
     --bs-btn-padding-y: .5rem; 
 
     --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
 
     // Container
     --bs-gutter-x: 1.5rem;
@@ -46,4 +50,9 @@ html {
 
 body {
 
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }
