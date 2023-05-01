@@ -1,5 +1,7 @@
+import Forgot from "~/Layout/components/Forgot";
+
 function ForgotPassword() {
-    return ( <h2>Forgot Page</h2> );
+    return <Forgot/>;
 }
 
 export default ForgotPassword;

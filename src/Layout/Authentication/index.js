@@ -3,14 +3,14 @@ import styles from "./Authentication.module.scss";
 import Forgot from "../components/Forgot";
 
 const cx = classNames.bind(styles);
-function Authentication() {
+function Authentication({ children }) {
   return (
     <div className={cx("background")}>
       <div className={cx("container")}>
         <div className={cx("wrapper", "row")}>
           <div className={cx("myShadow")}>
             <div className={cx("row")}>
-              <Forgot />
+              {children}
             </div>
           </div>
         </div>
