@@ -19,7 +19,7 @@ import Button from "~/Components/Button";
 import images from "~/assets/img";
 import Navbar from "../Navbar";
 import Search from "../Search";
-import Image from "../../../Components/Images";
+import Image from "~/Components/Images";
 
 const cx = classNames.bind(styles);
 

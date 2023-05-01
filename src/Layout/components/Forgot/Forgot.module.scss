@@ -1,0 +1,208 @@
+.background {
+  background-color: #fff;
+  padding: 1.5rem;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .background {
+    flex: 0 0 58.3333%;
+    max-width: 58.3333333%;
+  }
+}
+
+.title {
+  color: #007bff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.hr {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.lead {
+  color: #6c757d;
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.forgotForm {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.inputGroupPrepend {
+  margin-right: -1px;
+  display: flex;
+}
+
+.inputGroupText {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: #495057;
+  text-align: center;
+  white-space: nowrap;
+  background-color: #e9ecef;
+  border: 1px solid #ced4da;
+}
+
+.icon {
+    font-size: 1.333333rem;
+    line-height: .75rem;
+    font-weight: 400;
+}
+
+.email {
+  &:focus {
+    z-index: 3;
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+  }
+  &:not(textarea) {
+    height: calc(1.5em + 1rem + 2px);
+  }
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  position: relative;
+  flex: 1 1 auto;
+  width: 1%;
+  min-width: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+
+  display: block;
+  font-weight: 400;
+  font-family: 'Maven Pro', sans-serif;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.myBtn {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  display: block;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  
+  &:hover{
+    background-image: linear-gradient(to right, #495aff 0%, #0acffe 100%);
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38,143,255,.5);
+  }
+}
+
+.myColor {
+  background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .myColor {
+    flex: 0 0 41.666667%;
+    max-width: 41.666667%;
+  }
+}
+
+.text-reset {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+
+.myHr {
+  height: 2px;
+  border-radius: 100px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  width: 50%;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    text-decoration: none;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248,249,250,.5);
+    outline: 0;
+  }
+}
