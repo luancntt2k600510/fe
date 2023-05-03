@@ -1,0 +1,52 @@
+.hr {
+  opacity: 0.1;
+}
+
+.inputGroupPrepend {
+  margin-right: -1px;
+}
+
+.inputGroupText {
+  padding: 0.55rem 1.2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.icon {
+  font-size: 1.65rem;
+  line-height: 0.75rem;
+}
+
+.custom-control {
+  float: left;
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-height: 1.5rem;
+}
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+
+.forgot-link {
+  &:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+}
+
+.myColor {
+  background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+}
+
+.myHr {
+  height: 2px!important;
+  background-color: #f8f9fa!important;
+  opacity: 1;
+}
+
+

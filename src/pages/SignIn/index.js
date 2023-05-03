@@ -1,5 +1,7 @@
+import Login from "~/Layout/components/Login";
+
 function SignIn() {
-    return ( <h2>SignIn Page</h2> );
+    return <Login />;
 }
 
 export default SignIn;

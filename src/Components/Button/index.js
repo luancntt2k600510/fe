@@ -8,6 +8,8 @@ function Button({
     to,
     href,
     primary = false,
+    submit = false,
+    next = false,
     outline = false,
     text = false,
     rounded = false,
@@ -46,6 +48,8 @@ function Button({
     const classes = cx("wrapper", {
         [className]: className,
         primary,
+        submit,
+        next,
         outline,
         warning,
         text,

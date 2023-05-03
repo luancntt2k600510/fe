@@ -1,21 +1,84 @@
 .wrapper {
-    padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
-    text-align: center;
-    vertical-align: middle;
-    margin-right: 0.5rem;
-    cursor: pointer;
-    font-size: var(--bs-font-size);
-    border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
-    border-radius: var(--bs-btn-border-radius)
+  padding: var(--bs-btn-padding-y) var(--bs-btn-padding-x);
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  font-size: var(--bs-font-size);
+  border: var(--bs-btn-border-width) solid var(--bs-btn-border-color);
+  border-radius: var(--bs-btn-border-radius);
 }
 
 .primary {
-    color: var(--bs-white-rgb);
-    background-color: var(--bs-red);
-    border-color: var(--bs-red)
+  color: var(--bs-white-rgb);
+  background-color: var(--bs-red);
+  border-color: var(--bs-red);
 }
 
 .warning {
-    background-color: var(--bs-warning);
+  background-color: var(--bs-warning);
+}
 
+.submit {
+  cursor: pointer;
+  width: 100%;
+  border-radius: 50px;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-image: linear-gradient(to right, #0acffe 0%, #495aff 100%);
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  line-height: 1.5;
+  color: #fff;
+  background-color: #007bff;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    background-image: linear-gradient(to right, #495aff 0%, #0acffe 100%);
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+  }
+}
+
+.next {
+  cursor: pointer;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  width: 50%;
+  color: white;
+  font-family: "Maven Pro", sans-serif;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    text-decoration: none;
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+    outline: 0;
+  }
 }

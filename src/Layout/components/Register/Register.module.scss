@@ -1,0 +1,41 @@
+.myColor {
+    background-image: linear-gradient(to right, #f83600 50%, #f9d423 150%);
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.myHr {
+    height: 2px!important;
+    border-radius: 100px;
+    background-color: #f8f9fa;
+    opacity: 1;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+}
+
+.input-group-prepend {
+    margin-right: -1px;
+}
+
+.flag {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.icon {
+    width: 1.25rem;
+    font-size: 1.33333rem;
+    line-height: .75rem;
+    vertical-align: -0.0667em;
+}

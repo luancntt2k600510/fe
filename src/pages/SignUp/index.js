@@ -1,5 +1,8 @@
+import Register from "~/Layout/components/Register";
+
 function SignUp() {
-    return ( <h2>SignUp Page</h2> );
+    return <Register/>;
+    
 }
 
 export default SignUp;

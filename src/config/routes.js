@@ -2,8 +2,8 @@ const routes = {
     home: '/',
     profile: '/@:nickname',
     search: '/search',
-    signin: '/signin',
-    signup: '/signup',
+    signin: '/login',
+    signup: '/register',
     forgot: '/forgot',
 };
 

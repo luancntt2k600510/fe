@@ -24,7 +24,7 @@ import Image from "~/Components/Images";
 const cx = classNames.bind(styles);
 
 function Header() {
-    const currentUser = true;
+    const currentUser = false;
     const [isSolidBell, setIsSolidBell] = useState(false);
     const [isSolidComments, setIsSolidComments] = useState(false);
 
@@ -98,8 +98,8 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button text>Sign In</Button>
-                            <Button warning>Log In</Button>
+                            <Link to="/register"><Button text>Register</Button></Link>
+                            <Link to="/signin"><Button warning>Log In</Button></Link>
                         </>
                     )}
                 </div>
