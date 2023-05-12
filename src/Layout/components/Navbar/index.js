@@ -1,31 +1,29 @@
-import classNames from "classnames/bind";
 
-import styles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 
 const cx = classNames.bind(styles);
 
 function Navbar() {
     return (
-        <div className={cx("navbar")}>
-            <Link to="#home" className={cx("nav")}>
-                Home
+        <div className={`nav justify-content-center`}>
+            <Link to="#home" className={`nav-link px-2 bg`}>
+                TRANG CHỦ
             </Link>
 
-            <Link to="#summary" className={cx("nav")}>
-                Summary
+            <Link to="#summary" className={`nav-link px-2 bg`}>
+                DÒNG LỊCH SỬ
             </Link>
 
-            <Link to="#share" className={cx("nav")}>
-                Share
+            <Link to="#share" className={`nav-link px-2 bg`}>
+                TƯ LIỆU
             </Link>
 
-            <Link to="#hotnews" className={cx("nav")}>
-                Hot News
+            <Link to="#hotnews" className={`nav-link px-2 bg`}>
+                NHÂN VẬT
             </Link>
 
-            <Link to="#contact" className={cx("nav")}>
-                Contact
+            <Link to="#contact" className={`nav-link px-2 bg`}>
+                DI TÍCH
             </Link>
         </div>
     );

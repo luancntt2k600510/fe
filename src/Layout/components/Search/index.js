@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import HeadlessTippy from '@tippyjs/react/headless'
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 
 import styles from "./Search.module.scss"
 
@@ -8,7 +8,7 @@ const cx = classNames.bind(styles);
 function Search() {
     const [searchValue, setSearchValue] = useState('');
     const [showResult, setShowResult] = useState(true);
-    const [searchResult, setSearchResult] = useState([]);
+    // const [searchResult, setSearchResult] = useState([]);
 
     const inputRef = useRef()
 
@@ -25,7 +25,7 @@ function Search() {
     return ( 
             <HeadlessTippy
                 interactive
-                visible={showResult && searchResult.length > 0}
+                visible={showResult}
                 onClickOutside={handleHideResult}
             >
                 <div className={cx('search')}>

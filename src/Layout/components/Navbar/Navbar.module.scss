@@ -1,11 +1,8 @@
 .navbar{
     display: flex;
-    flex-wrap: wrap;
-    padding-left: 1.5rem;
+    flex-wrap: nowrap;
     list-style: none;
     justify-content: center;
-    align-content: center;
-    // background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
 }
 
 .nav {

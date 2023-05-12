@@ -2,6 +2,10 @@ import { Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { publicRoutes } from "~/routes";
 import { DefaultLayout } from "./Layout";
+import axios from "axios";
+
+axios.default.baseURL = 'http://localhost:4000';
+axios.defaults.withCredentials = true;
 
 function App() {
     return (

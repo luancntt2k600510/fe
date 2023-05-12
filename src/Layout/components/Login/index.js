@@ -6,22 +6,44 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faKey } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import axios from "axios";
 
 const cx = classNames.bind(styles);
 function Login() {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  async function handleLoginSubmit(ev) {
+    ev.presentDefault();
+    try {
+      await axios.post('/login', {email, password})
+      alert('Login success')
+    } catch (e) {
+      alert('Login failed')
+    }
+  }
   return (
     <>
       <div className={`${cx("col-lg-7")} bg-white p-4`}>
         <h1 className={`text-center fw-bold text-primary`}>Sign in to Account</h1>
         <hr className={`my-3 ${cx('hr')}`} />
-        <form className={`px-3`} action="#" method="POST" id="login-form">
+        <form className={`px-3`} id="login-form" onSubmit={handleLoginSubmit}>
           <div className={`input-group input-group-lg mb-3`}>
             <div className={`${cx("inputGroupPrepend")} d-flex`}>
               <span className={`input-group-text rounded-0 ${cx('inputGroupText')}`}>
                 <FontAwesomeIcon icon={faEnvelope} className={`${cx("icon")} text-center fw-normal`} />
               </span>
             </div>
-            <input type="email" name="email" id="email" className={`form-control rounded-0`} placeholder="E-Mail" required />
+            <input 
+              type="email" 
+              name="email" 
+              id="email" 
+              className={`form-control rounded-0`} 
+              placeholder="E-Mail" 
+              value={email} 
+              onChange={ev => setEmail(ev.target.value)} 
+              required 
+            />
           </div>
           <div className={`input-group input-group-lg mb-3`}>
             <div className={`${cx("inputGroupPrepend")} d-flex`}>
@@ -29,7 +51,18 @@ function Login() {
                 <FontAwesomeIcon icon={faKey} className={`${cx("icon")} text-center fw-normal`} />
               </span>
             </div>
-            <input type="password" name="password" id="password" className={`form-control rounded-0`} placeholder="Password" autoComplete="off" minLength="8" required />
+            <input 
+              type="password" 
+              name="password" 
+              id="password" 
+              className={`form-control rounded-0`} 
+              placeholder="Password" 
+              value={password} 
+              onChange={ev => setPassword(ev.target.value)} 
+              autoComplete="off" 
+              minLength="8" 
+              required 
+            />
           </div>
           <div className={`mb-3 clearfix`}>
             {/* <div className={`custom-control custom-checkbox float-left`}>
